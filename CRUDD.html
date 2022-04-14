@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="crudd.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name</label><label class="validation-error hide" id="nameValidationError">This field is required.</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>EMPLOYEE_ID</label>
+                        <input type="text" name="empid" id="empid">
+                    </div>
+                    <div>
+                        <label>DESIGNATION</label>
+                        <input type="text" name="designation" id="designation">
+                    </div>
+                    <div>
+                        <label>SALARY</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="edetail">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>DESIGNATION</th>
+                            <th>SALARY</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="crudd.js"></script>
+</body>
+
+</html>
